@@ -1,0 +1,14 @@
+{
+  "name": "xdbot",
+  "version": "0.0.1",
+  "description": "Discord Bot By Koduro_Komi.",
+  "main": "bot.js",
+  "author": "Koduro_Komi",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "opusscript": "0.0.6",
+    "save": "^2.3.2",
+    "ytdl-core": "^0.20.0"
+  }
+}
