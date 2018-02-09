@@ -14,14 +14,14 @@ bot.login(botsettings.token);
 bot.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name","🐑*~Random~*🐑")
     member.guild.channels.find("name","annonces")
-    .sendMessage(":eye: Hello" + member.toString() + " ! Bienvenue sur ce serveur ! Enjoy !")
+    .sendMessage(":eye: Hello " + member.toString() + " ! Bienvenue sur ce serveur ! Enjoy !")
     member.addRole(role)
     console.log("Nouveau membre !")
 })
 
 bot.on("guildMemberRemove", member => {
     member.guild.channels.find("name","annonces")
-    .send(":eye:" + member.toString() + " ++")
+    .send(":eye: " + member.toString() + " ++")
     console.log("Quelqu'un a leave :/")
 })
 
