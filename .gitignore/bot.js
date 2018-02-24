@@ -21,7 +21,7 @@ bot.on("guildMemberAdd", member => {
 
 bot.on("guildMemberRemove", member => {
     member.guild.channels.find("name","annonces")
-    .send(":eye: ${member.user.username} ++")
+    .send(`:eye: ${member.user.username} ++`)
     console.log("Quelqu'un a leave :/")
 })
 
