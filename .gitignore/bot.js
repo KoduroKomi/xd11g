@@ -14,7 +14,7 @@ bot.login(botsettings.token);
 bot.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name","🐑*~Random~*🐑")
     member.guild.channels.find("name","annonces")
-    .sendMessage(":eye: Hello " + member.toString() + " ! Bienvenue sur ce serveur ! Enjoy !")
+    .sendMessage(":eye: Hello" + member.toString() + " ! Bienvenue sur ce serveur ! Enjoy !")
     member.addRole(role)
     console.log("Nouveau membre !")
 })
@@ -72,32 +72,4 @@ bot.on("message", message => {
         console.log("o:invit effectué")
 
     }
-
-
-    
-
-
-    if (message.content === "Salut"){
-        message.reply("Hey ! ^^")
-        console.log("Say : salut")
-    }
-    if (message.content === "salut"){
-        message.reply("Hey ! ^^")
-        console.log("Say : Salut")
-    }
-    if (message.content === "Cc"){
-        message.reply("Hello ! ^^")
-        console.log("Say : Cc")
-    }
-
-    if (message.content === "cc"){
-        message.reply("Hello ! ^^")
-        console.log("Say : cc")
-    }
-
-    if (message.content === "Pd"){
-        message.channel.send("Retourne jouer à la barbie.", {tts: true});
-            console.log("Insulte : Pd")
-        }
-
-;})
+});
